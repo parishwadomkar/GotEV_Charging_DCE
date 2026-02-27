@@ -23,17 +23,17 @@ The codebase supports:
 - `notebooks/`  
   Biogeme estimation notebooks (baseline MNL; pooled specifications; scenario splits).
 
-- `src/`  
+- `models/`  
   Helper scripts:
-  - `data_prep/` long→wide conversion, cleaning, coding checks
-  - `models/` reusable Biogeme model specs (optional refactor from notebooks)
+  - `biogeme/` Biogeme Model, cleaning, coding checks
+  - `ngene/`  Ngene model specs
 
 - `data/`
   - `data/example/` small, de-identified example dataset for reproducibility
   - `data/processed/` cleaned/analysis-ready data (tracked only if non-sensitive)
 
 - `outputs/` (NOT tracked)
-  Estimation outputs (html/log/pickle) and exported tables.
+  Estimation outputs and exported tables.
 
 ---
 
@@ -48,7 +48,7 @@ Biogeme estimation is run on a **choice-situation (wide) table**:
 
 ## Installation
 
-Recommended: Python 3.10+.
+Recommended: Python 3.9+.
 
 Create a virtual environment and install dependencies:
 
